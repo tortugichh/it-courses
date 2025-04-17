@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Crm from './pages/Crm';
 import ProtectedRoute from './components/common/ProtectedRoute';
-import ChatbotIcon from './components/common/ChatbotIcon';
+
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
             } />
           </Routes>
         </main>
-        <ChatbotIcon />
+       
         <Footer />
       </div>
     </Router>
