@@ -190,6 +190,7 @@ const LeadActivities = ({ leadId = null }) => {
             >
               <div className="flex items-start justify-between">
                 <div className="flex items-start space-x-3">
+                  
                   <input
                     type="checkbox"
                     checked={activity.completed}
