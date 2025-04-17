@@ -6,6 +6,9 @@ import Courses from './pages/Courses';
 import CourseDetails from './pages/CourseDetails';
 import Dashboard from './pages/Dashboard';
 import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Crm from './pages/Crm';
+import ProtectedRoute from './components/common/ProtectedRoute';
 import ChatbotIcon from './components/common/ChatbotIcon';
 
 function App() {
@@ -20,6 +23,12 @@ function App() {
             <Route path="/courses/:courseId" element={<CourseDetails />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/crm" element={
+              <ProtectedRoute>
+                <Crm />
+              </ProtectedRoute>
+            } />
           </Routes>
         </main>
         <ChatbotIcon />
